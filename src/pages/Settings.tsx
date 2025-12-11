@@ -32,6 +32,7 @@ import {
 	testOpenAIProvider,
 } from "../lib/tauri";
 import { appStore } from "../stores/app";
+import { themeStore } from "../stores/theme";
 import { toastStore } from "../stores/toast";
 
 export function SettingsPage() {
@@ -742,6 +743,15 @@ export function SettingsPage() {
 							/>
 						</svg>
 					</Button>
+					<img
+						src={
+							themeStore.resolvedTheme() === "dark"
+								? "/proxypal-white.png"
+								: "/proxypal-black.png"
+						}
+						alt="ProxyPal Logo"
+						class="w-8 h-8 rounded-xl object-contain"
+					/>
 					<h1 class="font-bold text-lg text-gray-900 dark:text-gray-100">
 						Settings
 					</h1>
@@ -2913,14 +2923,22 @@ export function SettingsPage() {
 						</h2>
 
 						<div class="p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 text-center">
-							<div class="w-12 h-12 mx-auto rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center mb-3">
-								<span class="text-white text-2xl">⚡</span>
+							<div class="w-12 h-12 mx-auto rounded-xl flex items-center justify-center mb-3">
+								<img
+									src={
+										themeStore.resolvedTheme() === "dark"
+											? "/proxypal-white.png"
+											: "/proxypal-black.png"
+									}
+									alt="ProxyPal Logo"
+									class="w-12 h-12 rounded-xl object-contain"
+								/>
 							</div>
 							<h3 class="font-bold text-gray-900 dark:text-gray-100">
 								ProxyPal
 							</h3>
 							<p class="text-sm text-gray-500 dark:text-gray-400">
-								Version 0.1.24
+								Version 0.1.25
 							</p>
 							<p class="text-xs text-gray-400 dark:text-gray-500 mt-2">
 								Built with love by OpenCodeKit
