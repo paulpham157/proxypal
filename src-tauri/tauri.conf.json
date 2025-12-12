@@ -55,7 +55,7 @@
 			"endpoints": [
 				"https://github.com/heyhuynhgiabuu/proxypal/releases/latest/download/latest.json"
 			],
-			"pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDhFNTJBRTUzMjA5MkI4M0UKUldRK3VKSWdVNjVTanA4S0hjVzBWOWw1dDhMM1VPMjVobXlWcHVlb2Q4cTJBNWUwQ1E3Q3kwREcK"
+			"pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXkgQTdCMTNDRkFCOTZBNzgyMQpSV1FoZUdxNStqeXhwM2JrWWVwL2tZOXRURWZPbU9MZlhRajRBMmVjSThXKzNtYlN0YWhybVNUVAo="
 		}
 	}
 }

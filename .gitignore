@@ -35,3 +35,5 @@ src-tauri/target/
 
 # CLIProxyAPI logs (prevent accidental commit)
 src-tauri/logs/
+*.key
+*.pub
